@@ -1,0 +1,31 @@
+1. usersignin/signup
+2.see the list of candidates
+3. voteone of the candidates only once
+4. route showing live votes
+5. user must contain one gov approved identitiy card : aadhar
+6.admin maintaining table of candidates and he cant vote
+
+
+
+routes
+
+1. user authentication
+/signup /login
+
+2. voting
+/candidates : GET - getthe list of candidates
+POST - give vote
+
+3. vote counts
+/vote/count : GET - list of candidaates sorted by their vote counts
+
+
+4. user profile
+/profile: get - get users profile
+/profile/password - put - change users password
+
+5. admin candidate mngmnt
+
+/candidate - post - createnew candidate
+/candidate/:candidateid : put - update an existing candidate
+/candidate/:candidateid : del - delete a candidate
